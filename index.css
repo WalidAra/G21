@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+    /* Colors */
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+
+    /* Fonts */
+    --Font-Family: 'Karla', sans-serif;
+    --Font-Size: 16px;
+    --Font-Weight: 400;
+    --Font-Weight-Bold: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--Font-Family);
+    font-size: var(--Font-Size);
+    background-color: var(--Light-Gray);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    border-radius: 0.6rem;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "a a""b c";
+    max-width: 2rem 1rem;
+}
+
+.box {
+    padding: 2.4rem;
+}
+
+.join {
+    grid-area: a;
+    background-color: white;
+}
+
+h1 {
+    color: var(--Cyan);
+    font-size: 1.6rem;
+    padding-bottom: 1.4rem;
+}
+
+h3 {
+    color: var(--Bright-Yellow);
+    padding-bottom: 0.8rem;
+}
+
+.join p {
+    color: var(--Grayish-Blue);
+    line-height: 2rem;
+}
+.subscription {
+    grid-area: b;
+    background-color: var(--Cyan);
+}
+
+.why_Us {
+    grid-area: c;
+    background-color: hsl(179, 41%, 53%);
+}
+
+h2 {
+    color: var(--Light-Gray);
+    font-size: 1.15rem;
+    padding-bottom: 1.2rem;
+}
+
+h5 {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.7rem;
+}
+
+h5 span.price {
+    color: var(--Light-Gray);
+    font-weight: var(--Font-Weight-Bold);
+    font-size: 1.8rem;
+    padding-right: 0.7rem;
+}
+
+h5 span {
+    color: hsl(177, 30%, 46%);
+    font-weight: var(--Font-Weight);
+    font-size: var(--Font-Size);
+}
+
+.subscription p {
+    color: var(--Light-Gray);
+}
+
+.subscription a {
+    display: block;
+    text-align: center;
+    background-color: var(--Bright-Yellow);
+    text-decoration: none;
+    color: var(--Light-Gray);
+    font-weight: var(--Font-Weight-Bold);
+    font-size: var(--Font-Size);
+    padding: 0.9rem 0;
+    border-radius: 0.3rem;
+    margin-top: 1.9rem;
+}
+
+.why_Us ul {
+    list-style: none;
+}
+
+.why_Us li {
+    color: var(--Light-Gray);
+    padding-bottom: 4px;
+    font-size: 14px;
+}
+
+@media (max-width: 425px) {
+    .wrapper {
+        grid-template-columns: 100%;
+        grid-template-areas: "a""b""c";
+    }
+    .box {
+        padding: 1.8rem;
+    }
+}
