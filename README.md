@@ -22,9 +22,9 @@ Users should be able to:
 - Build out the project to the designs provided
 
 ### Screenshot
-![Mobile View](Mobile%20View%20.png)
+![Mobile View](./assets/Mobile%20View%20.png)
 
-![Desktop View](Desktop%20View.png)
+![Desktop View](./assets/Desktop%20View.png)
 
 
 ### Links
